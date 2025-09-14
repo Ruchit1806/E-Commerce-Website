@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ruchit Store | Checkout</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* Checkout form specific styles */
+    .checkout-section {
+      padding: 60px 5%;
+      background: linear-gradient(to right, #f9f9f9, #fff4e6);
+      display: flex;
+      justify-content: center;
+    }
+
+    .checkout-form {
+      max-width: 600px;
+      width: 100%;
+      background: white;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 6px 20px rgba(0,0,0,0.15);
+    }
+
+    .checkout-form h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      color: #222;
+    }
+
+    .checkout-form label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 600;
+      color: #333;
+    }
+
+    .checkout-form input, 
+    .checkout-form select, 
+    .checkout-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 20px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
+      outline: none;
+      font-size: 1rem;
+    }
+
+    .checkout-form button {
+      width: 100%;
+      padding: 15px;
+      border: none;
+      border-radius: 30px;
+      background: #ff9800;
+      color: white;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .checkout-form button:hover {
+      background: #e68900;
+      transform: scale(1.02);
+    }
+
+    /* Navbar color same as other pages */
+    header .navbar {
+      background: #222;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Ruchit Store</h1>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="cart.html">🛒 Cart</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CHECKOUT FORM -->
+  <section class="checkout-section">
+    <div class="checkout-form">
+      <h2>Checkout</h2>
+      <form onsubmit="event.preventDefault(); alert('Order placed successfully!')">
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
+
+        <label for="address">Shipping Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="123 Street, City, Country" required></textarea>
+
+        <label for="cardnumber">Card Number</label>
+        <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456" required>
+
+        <label for="expirydate">Expiry Date</label>
+        <input type="month" id="expirydate" name="expirydate" required>
+
+        <label for="cvv">CVV</label>
+        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Ruchit Store. All rights reserved.</p>
+  </footer>
+</body>
+</html>
