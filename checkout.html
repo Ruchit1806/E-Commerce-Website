@@ -88,38 +88,43 @@
   </header>
 
   <!-- CHECKOUT FORM -->
-  <section class="checkout-section">
-    <div class="checkout-form">
-      <h2>Checkout</h2>
-      <form onsubmit="event.preventDefault(); alert('Order placed successfully!')">
-        <label for="fullname">Full Name</label>
-        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+<section class="checkout-section"> 
+  <div class="checkout-form">
+    <h2>Checkout</h2>
 
-        <label for="email">Email</label>
-        <input type="email" id="email" name="email" placeholder="example@email.com" required>
+    <!-- Connected with Formspree -->
+    <form action="https://formspree.io/f/xjkeqbwj" method="POST">
+      <label for="fullname">Full Name</label>
+      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
 
-        <label for="phone">Phone Number</label>
-        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="_replyto" placeholder="example@email.com" required>
 
-        <label for="address">Shipping Address</label>
-        <textarea id="address" name="address" rows="3" placeholder="123 Street, City, Country" required></textarea>
+      <label for="phone">Phone Number</label>
+      <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
 
-        <label for="cardnumber">Card Number</label>
-        <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456" required>
+      <label for="address">Shipping Address</label>
+      <textarea id="address" name="address" rows="3" placeholder="123 Street, City, Country" required></textarea>
 
-        <label for="expirydate">Expiry Date</label>
-        <input type="month" id="expirydate" name="expirydate" required>
+      <label for="cardnumber">Card Number</label>
+      <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456" required>
 
-        <label for="cvv">CVV</label>
-        <input type="text" id="cvv" name="cvv" placeholder="123" required>
+      <label for="expirydate">Expiry Date</label>
+      <input type="month" id="expirydate" name="expirydate" required>
 
-        <button type="submit">Place Order</button>
-      </form>
-    </div>
-  </section>
+      <label for="cvv">CVV</label>
+      <input type="text" id="cvv" name="cvv" placeholder="123" required>
+
+      <button type="submit">Place Order</button>
+    </form>
+  </div>
+</section>
+
 
   <footer>
     <p>&copy; 2025 Ruchit Store. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
+
