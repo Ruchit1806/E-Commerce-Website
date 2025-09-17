@@ -30,41 +30,34 @@
     <p>We’d love to hear from you! Reach out with your queries or suggestions.</p>
   </section>
 
-<!-- CONTACT FORM -->
-<section id="contact-form" style="padding:60px 5%; background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600') no-repeat center center/cover; background-size: cover;">
-  <div style="max-width:700px; margin:auto; background: rgba(255,255,255,0.95); padding:40px; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
-    <h3 style="text-align:center; margin-bottom:30px; color:#222;">Get in Touch</h3>
+  <!-- CONTACT FORM -->
+  <section id="contact-form" style="padding:60px 5%; background: url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=1600') no-repeat center center/cover; background-size: cover;">
+    <div style="max-width:700px; margin:auto; background: rgba(255,255,255,0.95); padding:40px; border-radius:15px; box-shadow:0 4px 15px rgba(0,0,0,0.1);">
+      <h3 style="text-align:center; margin-bottom:30px; color:#222;">Get in Touch</h3>
 
-    <!-- Formspree integrated form -->
-    <form action="https://api.web3forms.com/submit" method="POST">
-       <input type="hidden" name="access_key" value="fe799099-09c1-4567-a6b0-ca1118c68212">
-      <label>
+      <!-- ✅ Web3Forms Integrated Form -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <!-- REQUIRED: Your Web3Forms Access Key -->
+        <input type="hidden" name="access_key" value="fe799099-09c1-4567-a6b0-ca1118c68212">
+
+        <!-- Your Form Fields -->
         <input type="text" name="name" placeholder="Your Name" required style="width:100%; padding:12px; margin-bottom:15px; border-radius:10px; border:1px solid #ccc; outline:none;">
-      </label>
 
-      <label>
-        <input type="email" name="_replyto" placeholder="Your Email" required style="width:100%; padding:12px; margin-bottom:15px; border-radius:10px; border:1px solid #ccc; outline:none;">
-      </label>
+        <!-- ✅ FIXED: email field name -->
+        <input type="email" name="email" placeholder="Your Email" required style="width:100%; padding:12px; margin-bottom:15px; border-radius:10px; border:1px solid #ccc; outline:none;">
 
-      <label>
         <input type="text" name="subject" placeholder="Subject" required style="width:100%; padding:12px; margin-bottom:15px; border-radius:10px; border:1px solid #ccc; outline:none;">
-      </label>
 
-      <label>
         <input type="tel" name="phone" placeholder="Phone Number" style="width:100%; padding:12px; margin-bottom:15px; border-radius:10px; border:1px solid #ccc; outline:none;">
-      </label>
 
-      <label>
         <textarea name="message" placeholder="Your Message" rows="6" required style="width:100%; padding:12px; margin-bottom:20px; border-radius:10px; border:1px solid #ccc; outline:none;"></textarea>
-      </label>
 
-      <button type="submit" style="width:100%; padding:15px; border:none; border-radius:30px; background:#ff9800; color:white; font-size:1rem; font-weight:600; cursor:pointer; transition:0.3s;">
-        Send Message
-      </button>
-    </form>
-  </div>
-</section>
-
+        <button type="submit" style="width:100%; padding:15px; border:none; border-radius:30px; background:#ff9800; color:white; font-size:1rem; font-weight:600; cursor:pointer; transition:0.3s;">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
 
   <!-- FOOTER -->
   <footer>
@@ -72,7 +65,4 @@
   </footer>
 </body>
 </html>
-
-
-
 
