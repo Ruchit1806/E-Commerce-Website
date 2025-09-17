@@ -6,7 +6,6 @@
   <title>Ruchit Store | Checkout</title>
   <link rel="stylesheet" href="style.css">
   <style>
-    /* Checkout form specific styles */
     .checkout-section {
       padding: 60px 5%;
       background: linear-gradient(to right, #f9f9f9, #fff4e6);
@@ -37,7 +36,6 @@
     }
 
     .checkout-form input, 
-    .checkout-form select, 
     .checkout-form textarea {
       width: 100%;
       padding: 12px;
@@ -66,7 +64,6 @@
       transform: scale(1.02);
     }
 
-    /* Navbar color same as other pages */
     header .navbar {
       background: #222;
     }
@@ -88,45 +85,43 @@
   </header>
 
   <!-- CHECKOUT FORM -->
-<section class="checkout-section"> 
-  <div class="checkout-form">
-    <h2>Checkout</h2>
+  <section class="checkout-section"> 
+    <div class="checkout-form">
+      <h2>Checkout</h2>
 
-    <!-- Connected with Formspree -->
-    <form action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="fe799099-09c1-4567-a6b0-ca1118c68212">
-      <label for="fullname">Full Name</label>
-      <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
+      <!-- ✅ Safe Web3Forms Checkout Form -->
+      <form action="https://api.web3forms.com/submit" method="POST">
+        <input type="hidden" name="access_key" value="fe799099-09c1-4567-a6b0-ca1118c68212">
 
-      <label for="email">Email</label>
-      <input type="email" id="email" name="_replyto" placeholder="example@email.com" required>
+        <label for="fullname">Full Name</label>
+        <input type="text" id="fullname" name="fullname" placeholder="John Doe" required>
 
-      <label for="phone">Phone Number</label>
-      <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
+        <label for="email">Email</label>
+        <!-- ✅ FIXED email field name -->
+        <input type="email" id="email" name="email" placeholder="example@email.com" required>
 
-      <label for="address">Shipping Address</label>
-      <textarea id="address" name="address" rows="3" placeholder="123 Street, City, Country" required></textarea>
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
 
-      <label for="cardnumber">Card Number</label>
-      <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456" required>
+        <label for="address">Shipping Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="123 Street, City, Country" required></textarea>
 
-      <label for="expirydate">Expiry Date</label>
-      <input type="month" id="expirydate" name="expirydate" required>
+        <!-- ⚠️ Removed card number + CVV -->
+        <p style="color:#b00; font-size:0.9rem; background:#fff4f4; padding:10px; border-radius:10px;">
+          🔒 Secure Payment: After you submit this form, we will send you a secure payment link via email/WhatsApp.
+        </p>
 
-      <label for="cvv">CVV</label>
-      <input type="text" id="cvv" name="cvv" placeholder="123" required>
-
-      <button type="submit">Place Order</button>
-    </form>
-  </div>
-</section>
-
+        <button type="submit">Place Order</button>
+      </form>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; 2025 Ruchit Store. All rights reserved.</p>
   </footer>
 </body>
 </html>
+
 
 
 
